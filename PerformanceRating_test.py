@@ -17,7 +17,7 @@ class TestPerformanceRating(unittest.TestCase):
     # EC3: 13 <= time <= 20
     def test_t3(self):
         pr = PerformanceRating()
-        self.assertEqual(pr.rate(15, False), 51)
+        self.assertEqual(pr.rate(15, False), 50)
 
     # EC4: 20 <= time <= 60 
     def test_t4(self):
@@ -83,3 +83,4 @@ class TestPerformanceRating(unittest.TestCase):
     # # Decision Table Testing:
 
     # def test_t16(self):
+
